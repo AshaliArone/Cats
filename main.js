@@ -58,8 +58,26 @@ let cats = `{
     ]
     }`
 
+    //initialized the starting variables
     let header = documentElementById("header")
     let section = documentElementById("section")
     let catsObj = JSON.parse(string)
+
+    // called function to create the header and the section
+    createHeader(catsObj);
+    createSection(catsObj);
+    //function to turn the JSON into HTML for header and section
+    function createHeader(catsObj){
+        const H1 = document.createElement("h1")
+        H1.textContent = Obj.catsBreed
+
+    }
+    function createSection(catsObj){
+        const H1 = document.createElement("h1")
+        H1.textContent = Obj.catsName
+    }
+
+    
+
 
     
